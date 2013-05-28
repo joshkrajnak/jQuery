@@ -1,0 +1,21 @@
+<html>
+<head>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+
+<select id="fruit">
+<option>Apples</option>
+<option>Oranges</option>
+</select>
+
+<p id="selectedFruit"></p>
+
+<script>
+$("#fruit").on('change', function() {
+    $("#selectedFruit").html($("select option:selected").text());
+});
+</script>
+
+</body>
+</html>
